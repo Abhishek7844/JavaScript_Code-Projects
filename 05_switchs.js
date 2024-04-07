@@ -1,4 +1,5 @@
 const prompt = require('prompt-sync')();
+
 const num = prompt("Enter no b/w 0-6: get Day: ");
 let Dnum = parseInt(num)
 /*
@@ -16,6 +17,7 @@ switch(expression) {
 }
 
 */
+
 let day;
 switch (Dnum) {
   case 0:
@@ -41,4 +43,29 @@ switch (Dnum) {
     default:
       day = "Enter num  b/w 0-6"
 }
-console.log(day)
+console.log(day);
+
+
+let num1 = prompt("Enter age: ");
+let age = parseInt(num1)
+
+
+switch (age) {
+  
+    
+  case 18:
+    result = "Valid for license";
+    break;
+  case 17:
+    result = "not valid";
+    break;
+  case 15:
+    result = "not valid";
+    break;
+  case 16:
+    result = "not valid";
+    break;
+  default:
+    result = "Enter vaild age";
+}
+console.log(result)
