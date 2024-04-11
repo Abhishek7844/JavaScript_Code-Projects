@@ -15,5 +15,18 @@ const prompt = require('prompt-sync')();
 let gender = prompt("Enter your Gender : ");
 let gen = gender.toUpperCase();
 
-const result = `${gen === 'F' ? "She" : "He" } is a college student`; //don't think that he will run on all letter input
+const result = `${gender.toUpperCase() === 'F' ? "She" : "He" } is a college student`;
+
+//don't think abt that he will run on all letter input
+
 console.log(result)
+
+
+// Mind-blowing facts of Ternary oprtr:
+
+//const res1 = '' ? 'James 1' : '' ? 'James 2' : "Johnson 2"
+const res1 = '' ? 'James 1' : 'Johnson 1' ? 'James 2' : "Johnson 2"
+
+// Above if condition is true then normally print but if false the  else option will work as condition n then next statemnt 1 or 2 will print
+
+console.log(res1)
